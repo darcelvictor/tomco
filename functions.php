@@ -171,7 +171,6 @@ function team_post_type() {
 			'name'                => _x( 'Team', 'Post Type General Name', 'tomco' ),
 			'singular_name'       => _x( 'Collaborateur', 'Post Type Singular Name', 'tomco' ),
 			'menu_name'           => __( 'Team', 'tomco' ),
-			'parent_item_colon'   => __( 'Parent Collaborateur', 'tomco' ),
 			'all_items'           => __( 'All Team', 'tomco' ),
 			'view_item'           => __( 'View Collaborateur', 'tomco' ),
 			'add_new_item'        => __( 'Add New Collaborateur', 'tomco' ),
@@ -188,7 +187,7 @@ function team_post_type() {
 		$args = array(
 			'label'               => __( 'Team', 'tomco' ),
 			'menu_icon'	          => 'dashicons-businessman',
-			'description'         => __( 'Collaborateurs présents chez ToMCo', 'tomco' ),
+			'description'         => __( 'ToMCo collaborators', 'tomco' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
@@ -213,7 +212,7 @@ function team_post_type() {
 		);
 		 
 		// Registering your Custom Post Type
-		register_post_type( 'Team', $args );
+		register_post_type( 'team', $args );
 	 
 	}
 	 
