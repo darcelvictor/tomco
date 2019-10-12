@@ -121,6 +121,12 @@ add_action( 'widgets_init', 'tomco_widgets_init' );
  */
 function tomco_scripts() {
 	wp_enqueue_style( 'tomco-style', get_stylesheet_uri() );
+	
+	wp_register_style('font_lora', 'https://fonts.googleapis.com/css?family=Lora:400,700', array(), null, 'all');
+    wp_register_style('font_muli', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800', array(), null, 'all');
+ 
+    wp_enqueue_style('font_lora');
+    wp_enqueue_style('font_muli');
 
 	// wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -133,6 +139,7 @@ function tomco_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomco_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -222,3 +229,5 @@ function team_post_type() {
 	*/
 	 
 	add_action( 'init', 'team_post_type', 0 );
+
+
