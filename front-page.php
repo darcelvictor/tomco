@@ -2,7 +2,7 @@
     <section id="particles-js">
     <div class="headerContent">
        <h1><?php the_field('slogan');?></h1>
-        <a class="grBttn" href="<?php the_field('lien_du_bouton_call_to_action');?>">
+        <a class="Bttn grBttn" href="<?php the_field('lien_du_bouton_call_to_action');?>">
             <?php the_field('bouton_call_to_action');?>
         </a>
     </div>
@@ -71,7 +71,7 @@
             </div>
     </div>
     <div id="teamBttn">
-        <a class="grBttn" href="<?php the_field('team_bttn_link');?>">
+        <a class="Bttn grBttn" href="<?php the_field('team_bttn_link');?>">
             <?php the_field('team_bttn');?>
         </a>
     </div>

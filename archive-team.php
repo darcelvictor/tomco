@@ -4,9 +4,17 @@ Template Name: archive-team
 */
 ?> 
    <section id="contentPage">
-	   <?php include 'content-archive-template.php';?>
-   <div class="jobContent">
-   <div class="teamContent">
+	   <?php include 'template-content-archive.php';?>
+	   <div id="CATTeam">
+            <a class="Bttn grBttn" href="<?php the_field('link_button_1');?>">
+                <?php the_field('text_button_1');?>
+            </a>
+            <a class="Bttn blBttn" href="<?php the_field('link_button_2');?>">
+                <?php the_field('text_button_2');?>
+            </a>
+	   </div>
+	   
+   <div id="teamContent">
        <div class="gridTeam">
             <?php 
             $args = array( 'post_type' => 'team', 'posts_per_page' => -1 );
@@ -24,12 +32,11 @@ Template Name: archive-team
                             <p class="last_name"><?php the_field('last_name');?></p>
                         </div>
                         <?php endwhile; ?>
-                    </div>
-                <?php wp_reset_postdata(); ?>
-                <?php else:  ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
-        </div>
+		</div>
+		<?php wp_reset_postdata(); ?>
+		<?php else:  ?>
+		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+        <?php endif; ?>
     </div>
     </section>
 <?php get_footer();?>

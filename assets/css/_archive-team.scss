@@ -1,4 +1,33 @@
-.teamContent 
+#contentPage{
+    p
+    {
+        width: 90vw;
+        max-width: $maxTablet;
+        margin: auto;
+        text-align: justify;
+    }
+    #CATTeam
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin:40px auto;
+        max-width: $maxTablet;
+    }
+}
+@media screen and (max-width: $maxPhone) {
+    #CATTeam
+    {
+        flex-direction: column;
+       a
+       {
+        margin:10px auto;
+       }
+    }
+}
+
+
+#teamContent 
     {
         background-color: $myGray;
         width: 100vw;
@@ -24,6 +53,7 @@
                 }
                 p
                 {
+                    width: 100%;
                     text-align: center;
                 }
             }

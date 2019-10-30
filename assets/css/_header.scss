@@ -42,17 +42,17 @@ header
     justify-content: center;
   }
 
-@media screen and (min-width: $maxWidthMobile) {
+@media screen and (min-width: $maxTablet) {
     #primary-menu
     {
-        width:$maxWidthMobile;
+        width:$maxTablet;
         max-width: 90vw;
         display: inline-flex;
         justify-content: center;
 
         li {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             text-align: center;
             margin-left:auto;
             margin-right: auto;
@@ -68,7 +68,7 @@ header
     }
 }
 
-@media screen and (max-width: $maxWidthMobile) {
+@media screen and (max-width: $maxTablet) {
     header
     {
         height:70px;
@@ -209,7 +209,7 @@ display: none;
 	display: block;
 }
 
-@media screen and (min-width: $maxWidthMobile) {
+@media screen and (min-width: $maxTablet) {
 	.menu-toggle {
         display: none;
 	}

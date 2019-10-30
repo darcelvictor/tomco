@@ -10,9 +10,15 @@ $TomcoGray : #38373a;
 
 
 $shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+$borderRadius : 3px;
 .shadow
 {
     box-shadow:$shadow;
+}
+
+.borderRadius
+{
+    border-radius:$borderRadius;
 }
 
 
@@ -41,7 +47,8 @@ h2
 
 /*-----------------largeur max menu mobile-----------------*/
 
-$maxWidthMobile : 60em;
+$maxTablet : 60em;
+$maxPhone : 44em;
 
 html {
     scroll-behavior: smooth;
@@ -50,7 +57,7 @@ html {
 
 /*-----------------button-----------------*/
 
-.grBttn
+.Bttn
 {
     text-decoration: none !important;
     background-color: $green!important;
@@ -65,6 +72,17 @@ html {
     font-size: 2em !important;
     font-family: $muli ;
 }
+.blBttn
+{
+    background-color: $darkBlue!important;
+    border-color: $darkBlue!important;
+}
+.grBttn
+{
+    background-color: $green!important;
+    border-color: $green!important;
+}
+
 
 /*----------------Anchor-----------------*/
 a.anchor {
@@ -72,4 +90,12 @@ a.anchor {
     position: relative;
     top: -143px;
     visibility: hidden;
+}
+
+/*----------------FontAwesome-----------------*/
+i
+{
+    font-family: FontAwesome !important;
+    color : $myGray;
+    text-decoration: none;
 }

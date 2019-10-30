@@ -1,0 +1,18 @@
+#job
+{
+    margin : auto;
+    width: 90vw;
+    max-width: $maxTablet;
+    #contactBttn
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a
+        {
+            align-self: center;
+            margin:40px auto;
+
+        }
+    }
+}

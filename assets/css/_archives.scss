@@ -1,6 +1,7 @@
 @import "archive-post";
 @import "archive-job";
 @import "archive-team";
+@import "single-job";
 
 #contentPage
 {
@@ -10,7 +11,7 @@
     }
     #texte
     {
-        width: $maxWidthMobile;
+        width: $maxTablet;
         display: block;
         margin: 20px auto;
         text-align: justify;

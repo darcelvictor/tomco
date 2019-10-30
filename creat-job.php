@@ -7,15 +7,15 @@ function job_post_type() {
 	// Set UI labels for Custom Post Type
 		$labels = array(
 			'name'                => _x( 'job', 'Post Type General Name', 'tomco' ),
-			'singular_name'       => _x( 'Feed back', 'Post Type Singular Name', 'tomco' ),
+			'singular_name'       => _x( 'job', 'Post Type Singular Name', 'tomco' ),
 			'menu_name'           => __( 'Job', 'tomco' ),
-			'all_items'           => __( 'All feed back', 'tomco' ),
-			'view_item'           => __( 'View feed back', 'tomco' ),
-			'add_new_item'        => __( 'Add New Feed back', 'tomco' ),
+			'all_items'           => __( 'All job', 'tomco' ),
+			'view_item'           => __( 'View job', 'tomco' ),
+			'add_new_item'        => __( 'Add New job', 'tomco' ),
 			'add_new'             => __( 'Add New', 'tomco' ),
-			'edit_item'           => __( 'Edit feed back', 'tomco' ),
-			'update_item'         => __( 'Update feed back', 'tomco' ),
-			'search_items'        => __( 'Search feed back', 'tomco' ),
+			'edit_item'           => __( 'Edit job', 'tomco' ),
+			'update_item'         => __( 'Update job', 'tomco' ),
+			'search_items'        => __( 'Search job', 'tomco' ),
 			'not_found'           => __( 'Not Found', 'tomco' ),
 			'not_found_in_trash'  => __( 'Not found in Trash', 'tomco' ),
 		);
@@ -23,9 +23,9 @@ function job_post_type() {
 	// Set other options for Custom Post Type
 		 
 		$args = array(
-			'label'               => __( 'Job', 'tomco' ),
+			'label'               => __( 'job', 'tomco' ),
 			'menu_icon'	          => 'dashicons-id',
-			'description'         => __( 'ToMCo Job', 'tomco' ),
+			'description'         => __( 'ToMCo job', 'tomco' ),
 			'labels'              => $labels,
 			// Features this CPT supports in Post Editor
 			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
@@ -41,7 +41,7 @@ function job_post_type() {
 			'show_in_menu'        => true,
 			'show_in_nav_menus'   => true,
 			'show_in_admin_bar'   => true,
-			'menu_position'       => 6,
+			'menu_position'       => 7,
 			'can_export'          => true,
 			'has_archive'         => true,
 			'exclude_from_search' => false,

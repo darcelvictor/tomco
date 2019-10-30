@@ -63,7 +63,7 @@ section:not(#particles-js)
     .content {
         margin: auto;
         width: 70vw;
-        max-width: $maxWidthMobile;
+        max-width: $maxTablet;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -101,7 +101,7 @@ section:not(#particles-js)
         display: flex;
         justify-content: center;
         vertical-align: center;
-        max-width: $maxWidthMobile;
+        max-width: $maxTablet;
         margin: auto;
         .grBttn{
             display: flex;
@@ -118,7 +118,7 @@ section:not(#particles-js)
 {
    .swiper-container
    {
-       width: $maxWidthMobile;
+       width: $maxTablet;
        max-width: 90vw;
         .swiper-slide
         {
@@ -190,14 +190,14 @@ section:not(#particles-js)
     #wpforms-175
     {
         width: 70vw;
-        max-width: $maxWidthMobile;
+        max-width: $maxTablet;
         padding: 0 20px;
         display: flex;
         justify-content: center;
         margin: auto;
         #wpforms-form-175
         {
-            width: $maxWidthMobile;
+            width: $maxTablet;
             input
             {
                 border-style : none none solid none;
@@ -271,7 +271,7 @@ section:not(#particles-js)
 
 
 
-@media screen and (max-width: $maxWidthMobile) {
+@media screen and (max-width: $maxTablet) {
 
     #particles-js {
         height: 40vh!important;
@@ -335,7 +335,7 @@ section:not(#particles-js)
     {
        .swiper-container
        {
-           width: $maxWidthMobile;
+           width: $maxTablet;
            max-width: 90vw;
            height: 350px;
             .swiper-slide
