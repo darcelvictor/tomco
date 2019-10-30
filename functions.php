@@ -7,6 +7,15 @@
  * @package tomco
  */
 
+
+include 'creat-job.php';
+include 'creat-partners.php';
+include 'creat-testimonial.php';
+include 'jquery-updater.php';
+include 'styles-scripts.php';
+include 'login-page.php';
+
+
 if ( ! function_exists( 'tomco_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -116,30 +125,6 @@ function tomco_widgets_init() {
 }
 add_action( 'widgets_init', 'tomco_widgets_init' );
 
-/**
- * Enqueue scripts and styles.
- */
-function tomco_scripts() {
-	wp_enqueue_style( 'tomco-style', get_stylesheet_uri() );
-	
-	wp_register_style('font_lora', 'https://fonts.googleapis.com/css?family=Lora:400,700', array(), null, 'all');
-    wp_register_style('font_muli', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800', array(), null, 'all');
- 
-    wp_enqueue_style('font_lora');
-    wp_enqueue_style('font_muli');
-
-	// wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
-	// wp_enqueue_script( 'tomco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	wp_enqueue_script( 'tomco-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), '20151215', true );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'tomco_scripts' );
-
 
 /**
  * Implement the Custom Header feature.
@@ -167,67 +152,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-/**
- * Add custom Post type
- */
-function team_post_type() {
- 
-	// Set UI labels for Custom Post Type
-		$labels = array(
-			'name'                => _x( 'Team', 'Post Type General Name', 'tomco' ),
-			'singular_name'       => _x( 'Collaborateur', 'Post Type Singular Name', 'tomco' ),
-			'menu_name'           => __( 'Team', 'tomco' ),
-			'all_items'           => __( 'All Team', 'tomco' ),
-			'view_item'           => __( 'View Collaborateur', 'tomco' ),
-			'add_new_item'        => __( 'Add New Collaborateur', 'tomco' ),
-			'add_new'             => __( 'Add New', 'tomco' ),
-			'edit_item'           => __( 'Edit Collaborateur', 'tomco' ),
-			'update_item'         => __( 'Update Collaborateur', 'tomco' ),
-			'search_items'        => __( 'Search Collaborateur', 'tomco' ),
-			'not_found'           => __( 'Not Found', 'tomco' ),
-			'not_found_in_trash'  => __( 'Not found in Trash', 'tomco' ),
-		);
-		 
-	// Set other options for Custom Post Type
-		 
-		$args = array(
-			'label'               => __( 'Team', 'tomco' ),
-			'menu_icon'	          => 'dashicons-businessman',
-			'description'         => __( 'ToMCo collaborators', 'tomco' ),
-			'labels'              => $labels,
-			// Features this CPT supports in Post Editor
-			'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields', ),
-			// You can associate this CPT with a taxonomy or custom taxonomy. 
-			'taxonomies'          => array( 'genres' ),
-			/* A hierarchical CPT is like Pages and can have
-			* Parent and child items. A non-hierarchical CPT
-			* is like Posts.
-			*/ 
-			'hierarchical'        => false,
-			'public'              => true,
-			'show_ui'             => true,
-			'show_in_menu'        => true,
-			'show_in_nav_menus'   => true,
-			'show_in_admin_bar'   => true,
-			'menu_position'       => 5,
-			'can_export'          => true,
-			'has_archive'         => true,
-			'exclude_from_search' => false,
-			'publicly_queryable'  => true,
-			'capability_type'     => 'page',
-		);
-		 
-		// Registering your Custom Post Type
-		register_post_type( 'team', $args );
-	 
-	}
-	 
-	/* Hook into the 'init' action so that the function
-	* Containing our post type registration is not 
-	* unnecessarily executed. 
-	*/
-	 
-	add_action( 'init', 'team_post_type', 0 );
-
-

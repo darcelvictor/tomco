@@ -1,0 +1,31 @@
+.teamContent 
+    {
+        background-color: $myGray;
+        width: 100vw;
+        .gridTeam
+        {
+            margin: auto;
+            width: 90vw;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            .partner
+            {
+                width: 200px;
+                margin: 10px;
+                img
+                {
+                    width: 200px;
+                    max-width: 20vw;
+                    margin: 20px auto;
+                    display: block;
+                }
+                p
+                {
+                    text-align: center;
+                }
+            }
+        }
+    }

@@ -1,0 +1,18 @@
+@import "archive-post";
+@import "archive-job";
+@import "archive-team";
+
+#contentPage
+{
+    h1
+    {
+        text-align: center;
+    }
+    #texte
+    {
+        width: $maxWidthMobile;
+        display: block;
+        margin: 20px auto;
+        text-align: justify;
+    }
+}

@@ -348,6 +348,7 @@ gulp.task( 'translate', () => {
 		.pipe( notify({ message: '\n\n✅  ===> TRANSLATE — completed!\n', onLast: true }) );
 });
 
+
 /**
  * Watch Tasks.
  *

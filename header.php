@@ -30,7 +30,12 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="<?php echo get_bloginfo('template_url') ?>/assets/img/noun_menu.png" alt="Meniu"></button>
+		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<div class="burger-line first"></div>
+			<div class="burger-line second"></div>
+  			<div class="burger-line third"></div>
+  			<div class="burger-line fourth"></div>
+		</button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -44,5 +49,3 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-

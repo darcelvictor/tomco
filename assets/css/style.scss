@@ -20,155 +20,386 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import "bootstrap";
+@import "reset";
+@import "parameters";
+@import "slider";
+@import "particle";
+@import "header";
+@import "footer";
+@import "archives";
 
-/*-----------------Fonts-----------------*/
-h1 
+/*-----------------section-----------------*/
+section:not(#particles-js)
 {
-    font-family: 'muli', sans-serif;
+    padding: 30px 0;
+    .content{
+        padding: 20px;
+    }
 }
 
-p
+/*-----------------home Page-----------------*/
+#companyPresentation
 {
-   font-family: 'Lora', serif;
-}
-
-/*-----------------color-----------------*/
-
-$darkBlue : #232741;
-$green : #5DC976;
-$gray : #EFEFEF;
-$twitterBlue :  #1DA1F2;
-
-/*-----------------CSS-----------------*/
-
-.site-branding
-{
-    img {
-        width: 320px;
-        margin : 16px;
-        height: auto;
+    background-color: $myGray;
+    .content
+    {
         display: flex;
         justify-content: center;
-        margin-left: auto;
-        margin-right:auto;
-    }
-    
-}
+        align-items: center;
 
-
-#site-navigation{
-    display: flex;
-    justify-content: center;
-  }
-
-@media screen and (max-width: 37.5em) {
-    .site-branding{
-        img {
-            width: 160px;
-            margin-left: 16px;
-            display: flex;
-            justify-content: flex-start;
+        iframe,p 
+        {
+            width: 560px!important;
+        }
+        *
+        {
+            margin: 10px;
         }
     }
-    #site-navigation{
+}
+
+#number
+{
+    .content {
+        margin: auto;
+        width: 70vw;
+        max-width: $maxWidthMobile;
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        position: absolute;
-        top: 0px;
-      }
-}
-
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
-
-.main-navigation ul {
-	display: none;
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-        display: none;
-	}
-	.main-navigation ul {
-		display: block;
+        justify-content: space-around;
+        align-items: center;
+        .chart{
+            width: 10vw;
+            height: 10vw;
+            min-width: 200px;
+            min-height: 200px;
+        }
     }
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+#team
+{
+    background-color: $myGray;
+    .content 
+    {
+        margin: auto;
+        width: 70vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+            width: 200px;
+            max-width: 20vw;
+            margin: 20px;
+        }
+        p{
+            text-align: center;
+        }
+    }
+
+    #teamBttn
+    {
+        display: flex;
+        justify-content: center;
+        vertical-align: center;
+        max-width: $maxWidthMobile;
+        margin: auto;
+        .grBttn{
+            display: flex;
+            justify-content: center;
+            vertical-align: center;
+            text-align: center;
+            margin:auto;
+            
+        }
+    }
 }
 
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-	float: left;
-	width: 50%;
+#testimonial
+{
+   .swiper-container
+   {
+       width: $maxWidthMobile;
+       max-width: 90vw;
+        .swiper-slide
+        {
+            height: 200px;
+            width: 90vw;
+            display:grid;
+            grid-template-columns: 20% 5% 75%;
+            grid-template-rows: 50% 50%;
+            picture {
+            align-self: end;
+            justify-self: left;
+                > *{
+                    grid-row: 1/2;
+                    grid-column:1/2;
+                    max-height: 100px;
+                    max-width: 100%;
+                    margin: auto;
+                }
+            }
+            .author{
+                grid-row: 2/3;
+                grid-column:1/2;
+                align-self: start;
+                justify-self: left;
+                padding-top: 10px;
+                > * {
+                font-family: $lora;
+                color:$myDarkGray;
+                text-align: left;
+               } 
+                .name{
+                    font-family: $lora;
+                    font-weight: 800;
+                    color:$myDarkGray;
+                    text-align: left;
+                }
+            }
+            #border
+            {
+                height: 60%;
+                width: 2px;
+                background-color: $myDarkGray;
+                grid-row: 1/3;
+                grid-column:2/3;
+                justify-self: center;
+            }
+            .texte
+            {
+                justify-self: center;
+                max-width: 100%;
+                grid-row: 1/3;
+                grid-column:3/4;
+                font-size: 30px;
+                font-family: $muli;
+                color: $myDarkGray;
+            }
+        }
+        .swiper-pagination-bullet-active
+        {
+            background-color: $myDarkGray !important;
+        }
+    }
 }
 
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+#contact
+{
+    padding: 30px 0 0 0 !important;
+    background-color: $myGray;
+    #wpforms-175
+    {
+        width: 70vw;
+        max-width: $maxWidthMobile;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        #wpforms-form-175
+        {
+            width: $maxWidthMobile;
+            input
+            {
+                border-style : none none solid none;
+                border-bottom: 2px solid $myDarkGray;
+                border-radius: 0;
+                background-color: $myGray;
+            }
+            .wpforms-required-label{
+                display: none;
+            }
+        }
+        .wpforms-field-label
+        {
+            padding: 6px 10px;
+        }
+        label
+        {
+            font-family: $muli;
+            color :$myDarkGray;
+            font-weight: 400;
+        }
+        #wpforms-submit-175
+        {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        #wpforms-submit-175::after
+            {
+                content:'\f1d8' !important;
+                font-family: FontAwesome !important;
+                padding: 5px 5px 0 10px;
+            }
+    }
+   
+    textarea
+    {
+        resize : none;
+        width: 100%;
+        border: 2px solid $myDarkGray;
+        border-radius: 0;
+        background-color: $myGray;
+    }
+
+    img{
+        margin:10px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #adress
+    {
+        text-decoration:none;
+        p
+        {
+            margin: 10px auto 20px auto;
+            font-family: $muli;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            color: $myDarkGray;
+            line-height: 1.5;
+            :visited
+            {
+            text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: $maxWidthMobile) {
+
+    #particles-js {
+        height: 40vh!important;
+        margin:auto;
+        display: flex;
+        align-items: center;
+        div
+        {
+            position: absolute;
+            display: flex;
+            height: 40vh;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            a {
+                position: relative;
+                margin: 3vh auto;
+                font-size: 3vh!important;
+            }
+             h1{
+            margin: 3vh auto;
+            text-align: left;
+            font-size: 5vh;
+            }
+        }
+
+    }
+    #companyPresentation
+    {
+        .content
+        {
+            padding: 0 !important;
+            display: flex;
+            flex-direction:column-reverse;
+            p
+            {
+                text-align: justify;
+            }
+            *
+            {
+                margin: 20px;
+                max-width: 95vw;
+            }
+
+        }
+    }
+    #number
+    {
+        .content{
+            max-width: 95vw;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            .chart-container{
+                margin: 20px;
+            }
+        }
+    }
+
+    #testimonial
+    {
+       .swiper-container
+       {
+           width: $maxWidthMobile;
+           max-width: 90vw;
+           height: 350px;
+            .swiper-slide
+            {
+                height: 300px;
+                width: 95vw;
+                display:grid;
+                grid-template-columns: 48% 48%;
+                grid-template-rows: 48% 48%;
+                grid-gap: 2%;
+                picture {
+                align-self: center;
+                justify-self: center;
+                    > *{
+                        grid-row: 1/2;
+                        grid-column:1/2;
+                        max-height: 100px;
+                        max-width: 100%;
+                        margin: auto;
+                    }
+                }
+                .author{
+                    grid-row: 1/2;
+                    grid-column:2/3;
+                    align-self: center;
+                    justify-self: center;
+                    padding-top: 10px;
+                    > * {
+                    color:$myDarkGray;
+                    text-align: left;
+                   } 
+                    .name{
+                        font-weight: 800;
+                        color:$myDarkGray;
+                        text-align: left;
+                    }
+                }
+                #border
+                {
+                    display: none;
+                }
+                .texte
+                {
+                    justify-self: start;
+                    max-width: 100%;
+                    grid-row: 2/3;
+                    grid-column:1/3;
+                    font-size: 30px;
+                    color: $myDarkGray;
+                }
+            }
+            .swiper-pagination-bullet-active
+            {
+                background-color: $myDarkGray !important;
+            }
+        }
+    }
+
+    #contact
+    {
+        #wpforms-175
+        {
+            width: 95vw;
+        }
+    }
+
 }
