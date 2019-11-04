@@ -15,9 +15,9 @@ function tomco_scripts() {
 	wp_enqueue_style('swiper');
 	wp_enqueue_style('fontAwesome');
 
-	// wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/assets/js/custom/navigation.js', array(), '20151215', true );
 
-	// wp_enqueue_script( 'tomco-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'tomco-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/custom/skip-link-focus-fix.js', array(), '20151215', true );
 	
 	wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'three.js', 'https://threejs.org/examples/js/libs/stats.min.js', array(), '20151215', true );

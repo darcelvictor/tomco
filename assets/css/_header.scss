@@ -52,7 +52,7 @@ header
 
         li {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             text-align: center;
             margin-left:auto;
             margin-right: auto;
@@ -113,6 +113,23 @@ header
         align-items: center;
         margin: 0;
     }
+    .menu-toggle[aria-expanded="true"] ~ .menu-menu-1-container
+    {
+        height: calc(100vh - 70px);
+        position: relative;
+        top : 70px;
+        #primary-menu
+        {
+            width: 100vw;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
 }
 
 .burger-line {
@@ -214,9 +231,17 @@ display: none;
         display: none;
 	}
 	.main-navigation ul {
-		display: block;
+        display: block;
     }
 }
+.menu-toggle
+    {
+        border:none;
+        height: 50px;
+        width: 70px;
+        outline: none;
+        background-color: #fff;
+    }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
