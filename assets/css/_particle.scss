@@ -8,19 +8,23 @@
     {
         position: absolute;
         display: block;
+        top : 25%;
         max-width: 60vw;
         margin-left: 15vw;
         z-index: 100;
         h1
         {
-            margin-top: 10vh;
+            
             font-size: 4vw;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            text-shadow: $shadow;
+            text-align: left;
+            font-family: $muli;
+            color: $myGray;
         }
         a 
         {
             position: absolute;
-            margin-top: 10vh;
+            top : 100%;
             font-size: 2vw;
         }
     }
@@ -33,25 +37,26 @@
     }
 }
 
-@media screen and (max-width: $maxTablet) {
+@media screen and (max-width: $maxTablet) 
+{
     #particles-js div
     {
         margin-left:10vw;
         margin-right: 10vw;
         max-width: 80vw;
-    h1
-    {
-        font-size: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+        h1
+        {
+            font-size: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center !important;
+        }
+        
+        a 
+        {
+            font-size: 20px;
+        }
     }
-    
-    a 
-    {
-        font-size: 20px;
-    }
-}
 }
 
 .chart

@@ -5,7 +5,9 @@ Template Name: archive-job
 ?> 
    <section id="contentPage">
        <?php include 'template-content-archive.php';?>
-        <div id="jobContent">
+    </section>
+    <section id="jobContent">
+        <div>
                 <?php 
                 $args = array( 'post_type' => 'job', 'posts_per_page' => -1 );
                 $the_query = new WP_Query( $args ); 

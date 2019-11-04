@@ -28,14 +28,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "archives";
 @import "header";
 
-/*-----------------section-----------------*/
-section:not(#particles-js)
-{
-    padding: 30px 0;
-    .content{
-        padding: 20px;
-    }
-}
 
 /*-----------------home Page-----------------*/
 #companyPresentation
@@ -108,7 +100,6 @@ section:not(#particles-js)
             justify-content: center;
             vertical-align: center;
             text-align: center;
-            margin:auto;
             
         }
     }
@@ -185,7 +176,7 @@ section:not(#particles-js)
 
 #contact
 {
-    padding: 30px 0 0 0 !important;
+    padding-bottom: 0 !important;
     background-color: $myGray;
     #wpforms-175
     {
@@ -223,7 +214,6 @@ section:not(#particles-js)
         {
             display: flex;
             justify-content: center;
-            margin: auto;
         }
         #wpforms-submit-175::after
             {

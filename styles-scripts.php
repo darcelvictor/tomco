@@ -15,17 +15,22 @@ function tomco_scripts() {
 	wp_enqueue_style('swiper');
 	wp_enqueue_style('fontAwesome');
 
-	wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/assets/js/custom/navigation.js', array(), '20151215', true );
+	//wp_enqueue_script( 'tomco-navigation', get_template_directory_uri() . '/assets/js/custom/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'tomco-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/custom/skip-link-focus-fix.js', array(), '20151215', true );
+	//wp_enqueue_script( 'tomco-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/custom/skip-link-focus-fix.js', array(), '20151215', true );
 	
-	wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'three.js', 'https://threejs.org/examples/js/libs/stats.min.js', array(), '20151215', true );
-	//wp_enqueue_script( 'easyPieChart.js', 'https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/easypiechart.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'swiper.js', 'https://unpkg.com/swiper/js/swiper.min.js', array(), '20151215', true );
+	// wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
+	// wp_enqueue_script( 'three.js', 'https://threejs.org/examples/js/libs/stats.min.js', array(), '20151215', true );
+	// //wp_enqueue_script( 'easyPieChart.js', 'https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/easypiechart.min.js', array(), '20151215', true );
+	// wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
+	// wp_enqueue_script( 'swiper.js', 'https://unpkg.com/swiper/js/swiper.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'jQuery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '20151215', true );
-	
+	if( is_page( 36 ) ) {
+		wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
+		wp_enqueue_script( 'three.js', 'https://threejs.org/examples/js/libs/stats.min.js', array(), '20151215', true );
+		wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
+		wp_enqueue_script( 'swiper.js', 'https://unpkg.com/swiper/js/swiper.min.js', array(), '20151215', true );
+		}
 
 	wp_enqueue_script( 'tomco-custom-scripts', get_template_directory_uri() . '/assets/js/custom.min.js', array('customize-preview'), '20151215', true );
 
@@ -34,3 +39,11 @@ function tomco_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomco_scripts' );
+
+
+function load_js_assets() {
+     
+}
+
+add_action('wp_enqueue_scripts', 'load_js_assets');
+

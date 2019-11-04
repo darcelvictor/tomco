@@ -95,38 +95,27 @@ header
         
     }
 
-    .menu-toggle[aria-expanded="true"] ~ #primary-menu
+    #masthead .main-navigation.toggled
     {
         width: 100vw;
         height: 100vh;
-        background-color: $myGray;
-        margin: 0;
-        padding: 0;
-    }
-
-    .menu-toggle[aria-expanded="true"] ~ #primary-menu > ul
-    {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-    }
-    .menu-toggle[aria-expanded="true"] ~ .menu-menu-1-container
-    {
-        height: calc(100vh - 70px);
-        position: relative;
-        top : 70px;
-        #primary-menu
+        background: #fff;
+        .menu-menu-1-container
         {
-            width: 100vw;
-            height: 100%;
-            background-color: #fff;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-direction: column;
+                #primary-menu
+            {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                li 
+                {
+                   margin: 5vh auto;
+                }
+            }
         }
     }
     
@@ -134,7 +123,7 @@ header
 
 .burger-line {
 position: absolute;
-top: 16px;
+top: 22px;
 right: 16px;
 width: 35px;
 height: 3px;
@@ -143,11 +132,11 @@ transition: .5s all
 }
 
 .second, .third {
-top: 26px;
+top: 32px;
 }
 
 .fourth {
-top: 36px;
+top: 42px;
 }
 
 .menu-toggle[aria-expanded="true"] > .first {
@@ -237,7 +226,7 @@ display: none;
 .menu-toggle
     {
         border:none;
-        height: 50px;
+        height: 70px;
         width: 70px;
         outline: none;
         background-color: #fff;

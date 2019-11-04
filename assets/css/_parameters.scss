@@ -7,8 +7,7 @@ $twitterBlue :  #1DA1F2;
 $myDarkGray :#707070;
 $TomcoGray : #38373a;
 
-
-
+/*----------------shadow-----------------*/
 $shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 $borderRadius : 3px;
 .shadow
@@ -26,23 +25,61 @@ $borderRadius : 3px;
 $muli : 'muli', sans-serif;
 $lora :'Lora', serif;
 
-h1, a
+a,p
 {
     font-family: 'muli', sans-serif;
 }
 
-p,h2
+h2,h1
 {
    font-family: 'Lora', serif;
    color: $TomcoGray;
+   text-align: center;
 }
 
-h2
+// h2
+// {
+//     font-size: 52px;
+//     text-align: center;
+//     margin-bottom: 40px;
+// }
+
+body {
+    background-color: white;
+    font-weight: 400;
+    line-height: 1.45;
+    color: $myDarkGray;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin: 0 0 1rem;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 3.052em !important;
+  }
+  
+  h2 {font-size: 2.441em!important;}
+  
+  h3 {font-size: 1.953em!important;}
+  
+  h4 {font-size: 1.563em!important;}
+  
+  h5 {font-size: 1.25em!important;}
+  
+  small, .text_small {font-size: 0.8em!important;}
+
+  /*----------------FontAwesome-----------------*/
+i
 {
-    font-size: 52px;
-    text-align: center;
-    margin-bottom: 40px;
+    font-family: FontAwesome !important;
+    color : $myGray;
+    text-decoration: none;
 }
+
 
 
 /*-----------------largeur max menu mobile-----------------*/
@@ -71,6 +108,7 @@ html {
     box-shadow: $shadow!important;
     font-size: 2em !important;
     font-family: $muli ;
+    margin:30px auto 0 auto !important;
 }
 .blBttn
 {
@@ -92,10 +130,9 @@ a.anchor {
     visibility: hidden;
 }
 
-/*----------------FontAwesome-----------------*/
-i
+/*-----------------section-----------------*/
+section:not(.noPadding)
 {
-    font-family: FontAwesome !important;
-    color : $myGray;
-    text-decoration: none;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
 }

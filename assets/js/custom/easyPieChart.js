@@ -1,3 +1,4 @@
+try{
 Chart.pluginService.register({
 	afterUpdate: function (chart) {
 		if (chart.config.options.elements.arc.roundedCornersFor !== undefined) {
@@ -143,17 +144,20 @@ legend: {
 	}
 };
 
-function drawMyChart (myId)
-{
-	var ctx1 = document.getElementById(myId).getContext("2d");
-	var myValues1 =  document.getElementById(myId).dataset.values;
-	var myTxt1 = document.getElementById(myId).dataset.text;
-	myValues1 = myValues1.split(",");
-	myTxt1=String(myTxt1);
-	var config1= new config(myValues1,myTxt1);
-	var myChart = new Chart(ctx1, config1);
-};
-
+	function drawMyChart (myId)
+	{
+		var ctx1 = document.getElementById(myId).getContext("2d");
+		var myValues1 =  document.getElementById(myId).dataset.values;
+		var myTxt1 = document.getElementById(myId).dataset.text;
+		myValues1 = myValues1.split(",");
+		myTxt1=String(myTxt1);
+		var config1= new config(myValues1,myTxt1);
+		var myChart = new Chart(ctx1, config1);
+	};
 drawMyChart("myChart1");
 drawMyChart("myChart2");
 drawMyChart("myChart3");
+}catch(e){
+	
+	console.error(e);
+}

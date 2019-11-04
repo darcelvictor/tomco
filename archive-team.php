@@ -13,8 +13,9 @@ Template Name: archive-team
                 <?php the_field('text_button_2');?>
             </a>
 	   </div>
-	   
-   <div id="teamContent">
+	</section>
+    <section id="teamContent">
+   <div>
        <div class="gridTeam">
             <?php 
             $args = array( 'post_type' => 'team', 'posts_per_page' => -1 );
