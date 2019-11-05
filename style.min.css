@@ -118,7 +118,7 @@ header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-ind
 #testimonial .swiper-container .swiper-slide #border{height:60%;width:2px;background-color:#707070;grid-row:1/3;grid-column:2/3;justify-self:center}
 #testimonial .swiper-container .swiper-slide .texte{justify-self:center;max-width:100%;grid-row:1/3;grid-column:3/4;font-size:30px;font-family:"muli",sans-serif;color:#707070}
 #testimonial .swiper-container .swiper-pagination-bullet-active{background-color:#707070 !important}
-#contact{padding-bottom:0 !important;background-color:#efefef}
+#contact{background-color:#efefef}
 #contact #wpforms-175{width:70vw;max-width:60em;padding:0 20px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:auto}
 #contact #wpforms-175 #wpforms-form-175{width:60em}
 #contact #wpforms-175 #wpforms-form-175 input{border-style:none none solid none;border-bottom:2px solid #707070;border-radius:0;background-color:#efefef}
