@@ -1,7 +1,7 @@
 <?php get_header();?>
     <section id="particles-js" class="noPadding">
     <div class="headerContent">
-       <h1><?php the_field('slogan');?></h1>
+        <h1><?php the_field('slogan');?></h1>
         <a class="Bttn grBttn" href="<?php the_field('lien_du_bouton_call_to_action');?>">
             <?php the_field('bouton_call_to_action');?>
         </a>
