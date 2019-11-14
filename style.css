@@ -86,7 +86,7 @@ section:not(.noPadding) { padding-top: 40px !important; padding-bottom: 40px !im
 
 #particles-js { height: 60vh; width: 100vw; color: #EFEFEF; }
 
-#particles-js .headerContent { position: absolute; display: block; top: 25%; max-width: 60vw; left: 15%; z-index: 100; }
+#particles-js .headerContent { position: absolute; display: block; top: 33%; max-width: 60vw; left: 15%; z-index: 100; }
 
 #particles-js .headerContent h1 { font-size: 4vw; text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); text-align: left; font-family: "muli", sans-serif; color: #EFEFEF; }
 
@@ -222,7 +222,7 @@ header { position: fixed; width: 100vw; top: 0; height: 146px; background-color:
 
 #team .content { margin: auto; width: 70vw; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-#team .content img { width: 200px; max-width: 20vw; margin: 20px; }
+#team .content img { width: 150px; max-width: 20vw; margin: 20px; }
 
 #team .content p { text-align: center; }
 
