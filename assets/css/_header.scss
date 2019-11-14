@@ -185,6 +185,7 @@ display: none;
         max-width: 90vw;
         display: inline-flex;
         justify-content: center;
+        margin: 0 !important;
 
         li {
             display: flex;
@@ -214,6 +215,7 @@ display: none;
     #primary-menu
     {
         display: none;
+        margin: 0 !important;
     }    
     header
     {
