@@ -62,11 +62,16 @@
                         text-transform: uppercase;
                     }
                 }
+                #job
+                {
+                    font-size: 14px;
+                    width: 100%;
+                    text-align: center;
+                }
                 .lkBttn
                 {
                     position: static;
-                    margin-left: auto!important;
-                    margin-right: auto!important;
+                    margin: 20px auto!important;
                     align-self: center;
                     justify-self: center;
                     padding: 5px 10px !important;

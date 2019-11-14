@@ -67,7 +67,8 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #teamContent .gridTeam .partner img{width:150px;max-width:20vw;margin:20px auto;display:block}
 #teamContent .gridTeam .partner .first_name{width:100%;text-align:center}
 #teamContent .gridTeam .partner .first_name .family_name{text-transform:uppercase}
-#teamContent .gridTeam .partner .lkBttn{position:static;margin-left:auto !important;margin-right:auto !important;-ms-flex-item-align:center;align-self:center;justify-self:center;padding:5px 10px !important;font-size:1em !important;background-color:#0e76a8 !important;border-color:#0e76a8 !important}
+#teamContent .gridTeam .partner #job{font-size:14px;width:100%;text-align:center}
+#teamContent .gridTeam .partner .lkBttn{position:static;margin:20px auto !important;-ms-flex-item-align:center;align-self:center;justify-self:center;padding:5px 10px !important;font-size:1em !important;background-color:#0e76a8 !important;border-color:#0e76a8 !important}
 #teamContent .gridTeam .partner .lkBttn:before{font-family:"FontAwesome";content:'\f0e1'}
 #job{margin:auto;width:90vw;max-width:60em}
 #job #contactBttn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
