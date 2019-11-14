@@ -2,13 +2,18 @@
 
 
 
-<div class="entry-content">
-			<?php
-				the_content();
+<div id="primary" class="content-area">
+		<main id="main" class="site-main">
 
-				wp_link_pages( array(
-					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'storeone' ),
-					'after'  => '</div>',
-				) );
-			?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+
+			get_template_part( 'template-parts/content', get_post_type() );
+
+		endwhile; // End of the loop.
+        ?>
+        
+		</main><!-- #main -->
+	</div><!-- #primary -->
 <?php get_footer();?>
