@@ -46,10 +46,8 @@
         min-width: 100%;
         min-height: 60vh;
         display: grid;
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows:  10% 40% 40% 10%;;
-        justify-content: center;
-        align-content: center;
+        grid-template-columns: 5% 90% 5%;
+        grid-template-rows:  10% 40% 40% 10%;
         h1
         {
             grid-column: 2/3;
@@ -65,13 +63,16 @@
         
         .grBttn
         {
-            grid-area: 2/3/3/2;
+            position: static;
+            top:auto;
+            grid-column: 2/3;
+            grid-row: 3/4;
             align-self: center;
             justify-self: center;
             font-size: 20px;
             margin-top: 0!important;
             margin-left: auto!important;
-            margin-right: auto!important;;
+            margin-right: auto!important;
         }
     }
 }

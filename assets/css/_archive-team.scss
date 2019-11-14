@@ -42,19 +42,42 @@
             flex-wrap: wrap;
             .partner
             {
+                display: flex;
+                flex-direction: column;
                 width: 200px;
                 margin: 10px;
                 img
                 {
-                    width: 200px;
+                    width: 150px;
                     max-width: 20vw;
                     margin: 20px auto;
                     display: block;
                 }
-                p
+                .first_name
                 {
                     width: 100%;
                     text-align: center;
+                    .family_name
+                    {
+                        text-transform: uppercase;
+                    }
+                }
+                .lkBttn
+                {
+                    position: static;
+                    margin-left: auto!important;
+                    margin-right: auto!important;
+                    align-self: center;
+                    justify-self: center;
+                    padding: 5px 10px !important;
+                    font-size: 1em !important;
+                    background-color: #0e76a8 !important;
+                    border-color: #0e76a8 !important;
+                }
+                .lkBttn:before
+                {
+                    font-family: "FontAwesome";
+                    content:'\f0e1';
                 }
             }
         }

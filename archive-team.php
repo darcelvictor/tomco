@@ -29,8 +29,10 @@ Template Name: archive-team
                                 if( !empty( $image ) ): ?>
                                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                             <?php endif; ?>
-                            <p class="first_name"><?php the_field('first_name');?></p>
-                            <p class="last_name"><?php the_field('last_name');?></p>
+                            <p class="first_name"><?php the_field('first_name');?> <span class="family_name"><?php the_field('last_name');?></span></p>
+                            <a class="Bttn lkBttn" href="<?php the_field('linkedin_link');?>">
+                            Profil Linkedin <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                         <?php endwhile; ?>
 		</div>

@@ -63,9 +63,12 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #contentPage #CATTeam{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:90vw;max-width:60em;margin:auto}
 #teamContent{background-color:#efefef;width:100vw}
 #teamContent .gridTeam{margin:auto;width:90vw;max-width:1000px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
-#teamContent .gridTeam .partner{width:200px;margin:10px}
-#teamContent .gridTeam .partner img{width:200px;max-width:20vw;margin:20px auto;display:block}
-#teamContent .gridTeam .partner p{width:100%;text-align:center}
+#teamContent .gridTeam .partner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:200px;margin:10px}
+#teamContent .gridTeam .partner img{width:150px;max-width:20vw;margin:20px auto;display:block}
+#teamContent .gridTeam .partner .first_name{width:100%;text-align:center}
+#teamContent .gridTeam .partner .first_name .family_name{text-transform:uppercase}
+#teamContent .gridTeam .partner .lkBttn{position:static;margin-left:auto !important;margin-right:auto !important;-ms-flex-item-align:center;align-self:center;justify-self:center;padding:5px 10px !important;font-size:1em !important;background-color:#0e76a8 !important;border-color:#0e76a8 !important}
+#teamContent .gridTeam .partner .lkBttn:before{font-family:"FontAwesome";content:'\f0e1'}
 #job{margin:auto;width:90vw;max-width:60em}
 #job #contactBttn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #job #contactBttn a{-ms-flex-item-align:center;align-self:center;margin:40px auto}
@@ -127,9 +130,9 @@ header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-ind
 #primary-menu li a{text-decoration:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .menu-toggle{display:none}
 .main-navigation ul{display:block}
-}@media screen and (max-width:60em){#particles-js .headerContent{top:auto;left:auto;min-width:100%;min-height:60vh;display:grid;grid-template-columns:10% 80% 10%;grid-template-rows:10% 40% 40% 10%;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-line-pack:center;align-content:center}
+}@media screen and (max-width:60em){#particles-js .headerContent{top:auto;left:auto;min-width:100%;min-height:60vh;display:grid;grid-template-columns:5% 90% 5%;grid-template-rows:10% 40% 40% 10%}
 #particles-js .headerContent h1{grid-column:2/3;grid-row:2/3;align-self:center;justify-self:center;max-width:90vw;font-size:40px;margin-left:auto;margin-right:auto;text-align:center !important}
-#particles-js .headerContent .grBttn{grid-area:2/3/3/2;align-self:center;justify-self:center;font-size:20px;margin-top:0 !important;margin-left:auto !important;margin-right:auto !important}
+#particles-js .headerContent .grBttn{position:static;top:auto;grid-column:2/3;grid-row:3/4;align-self:center;justify-self:center;font-size:20px;margin-top:0 !important;margin-left:auto !important;margin-right:auto !important}
 #primary-menu{display:none}
 header{height:70px}
 .site-content{padding-top:70px}
