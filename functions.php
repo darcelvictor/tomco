@@ -11,7 +11,7 @@
 include 'creat-job.php';
 include 'creat-partners.php';
 include 'creat-testimonial.php';
-include 'jquery-updater.php';
+//include 'jquery-updater.php';
 include 'styles-scripts.php';
 include 'login-page.php';
 
@@ -152,3 +152,14 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+
+/**
+ * custom image size
+ */
+function wpm_new_image(){
+
+	add_image_size( 'logo', 300, 200); 
+	
+}
+add_action( 'after_setup_theme', 'wpm_new_image' );
