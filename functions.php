@@ -157,9 +157,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * custom image size
  */
-function wpm_new_image(){
+function wp_new_image_size(){
 
-	add_image_size( 'logo', 300, 200); 
+	add_image_size( 'logo', 300, 200, false); 
 	
 }
-add_action( 'after_setup_theme', 'wpm_new_image' );
+add_action( 'after_setup_theme', 'wp_new_image_size' );

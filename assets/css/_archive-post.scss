@@ -1,0 +1,21 @@
+#arhiveContent
+{ 
+    ul
+    {
+    display: flex;
+    max-width: $maxTablet;
+    width: 90vh;
+    margin: 0 auto;
+    }
+    li
+    {
+        .category
+        {
+            .fa-circle
+            {
+                color:$TomcoGray;
+                font-size : 6px;
+            }
+        }
+    }
+}

@@ -9,6 +9,13 @@
     {
         text-align: center;
     }
+    p
+    {
+        width: 90vw;
+        max-width: $maxTablet;
+        margin: auto;
+        text-align: justify;
+    }
     #texte
     {
         width: $maxTablet;

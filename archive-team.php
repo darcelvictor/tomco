@@ -16,14 +16,14 @@ Template Name: archive-team
 	</section>
     <section id="teamContent">
    <div>
-       <div class="gridTeam">
+       <ul class="gridTeam">
             <?php 
             $args = array( 'post_type' => 'team', 'posts_per_page' => -1 );
             $the_query = new WP_Query( $args ); 
             ?>
             <?php if ( $the_query->have_posts() ) : ?>
                         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                        <div class="partner">
+                        <li class="partner">
                             <?php 
                                 $image = get_field('image');
                                 if( !empty( $image ) ): ?>
@@ -34,9 +34,9 @@ Template Name: archive-team
                             <a class="Bttn lkBttn" href="<?php the_field('linkedin_link');?>">
                             Profil Linkedin <i class="fab fa-linkedin-in"></i>
                             </a>
-                        </div>
+                        </li>
                         <?php endwhile; ?>
-		</div>
+		</ul>
 		<?php wp_reset_postdata(); ?>
 		<?php else:  ?>
 		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

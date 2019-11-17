@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 {
     .content {
         margin: auto;
-        width: 70vw;
+        width: $maxTablet;
         max-width: $maxTablet;
         display: flex;
         justify-content: space-around;
@@ -74,7 +74,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     .content 
     {
         margin: auto;
-        width: 70vw;
+        width: $maxTablet;
+        max-width: 95vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -114,7 +115,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         .swiper-slide
         {
             height: 200px;
-            width: 90vw;
+            max-width: 90vw;
             display:grid;
             grid-template-columns: 20% 5% 75%;
             grid-template-rows: 50% 50%;
