@@ -1,21 +1,21 @@
 <?php
 /**
- * Add Team Post type
+ * Add advisor Post type
  */
-function team_post_type() {
+function advisor_post_type() {
  
 	// Set UI labels for Custom Post Type
 		$labels = array(
-			'name'                => _x( 'team', 'Post Type General Name', 'tomco' ),
-			'singular_name'       => _x( 'Collaborateur', 'Post Type Singular Name', 'tomco' ),
-			'menu_name'           => __( 'team', 'tomco' ),
-			'all_items'           => __( 'All team', 'tomco' ),
-			'view_item'           => __( 'View Collaborateur', 'tomco' ),
-			'add_new_item'        => __( 'Add New Collaborateur', 'tomco' ),
+			'name'                => _x( 'advisor', 'Post Type General Name', 'tomco' ),
+			'singular_name'       => _x( 'Advisor', 'Post Type Singular Name', 'tomco' ),
+			'menu_name'           => __( 'Advisors', 'tomco' ),
+			'all_items'           => __( 'All advisors', 'tomco' ),
+			'view_item'           => __( 'View Advisor', 'tomco' ),
+			'add_new_item'        => __( 'Add New Advisor', 'tomco' ),
 			'add_new'             => __( 'Add New', 'tomco' ),
-			'edit_item'           => __( 'Edit Collaborateur', 'tomco' ),
-			'update_item'         => __( 'Update Collaborateur', 'tomco' ),
-			'search_items'        => __( 'Search Collaborateur', 'tomco' ),
+			'edit_item'           => __( 'Edit Advisor', 'tomco' ),
+			'update_item'         => __( 'Update Advisor', 'tomco' ),
+			'search_items'        => __( 'Search Advisor', 'tomco' ),
 			'not_found'           => __( 'Not Found', 'tomco' ),
 			'not_found_in_trash'  => __( 'Not found in Trash', 'tomco' ),
 		);
@@ -23,7 +23,7 @@ function team_post_type() {
 	// Set other options for Custom Post Type
 		 
 		$args = array(
-			'label'               => __( 'team', 'tomco' ),
+			'label'               => __( 'advisor', 'tomco' ),
 			'menu_icon'	          => 'dashicons-businessman',
 			'description'         => __( 'ToMCo collaborators', 'tomco' ),
 			'labels'              => $labels,
@@ -50,7 +50,7 @@ function team_post_type() {
 		);
 		 
 		// Registering your Custom Post Type
-		register_post_type( 'team', $args );
+		register_post_type( 'advisor', $args );
 	 
 	}
 
@@ -59,4 +59,4 @@ function team_post_type() {
 * unnecessarily executed. 
 */
 	
-add_action( 'init', 'team_post_type', 0 );
+add_action( 'init', 'advisor_post_type', 0 );

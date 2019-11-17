@@ -18,7 +18,7 @@ Template Name: archive-team
    <div>
        <ul class="gridTeam">
             <?php 
-            $args = array( 'post_type' => 'team', 'posts_per_page' => -1 );
+            $args = array( 'post_type' => 'advisor', 'posts_per_page' => -1 );
             $the_query = new WP_Query( $args ); 
             ?>
             <?php if ( $the_query->have_posts() ) : ?>

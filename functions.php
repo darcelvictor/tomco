@@ -9,7 +9,8 @@
 
 
 include 'creat-job.php';
-include 'creat-partners.php';
+include 'creat-advisor.php';
+include 'creat-expert.php';
 include 'creat-testimonial.php';
 //include 'jquery-updater.php';
 include 'styles-scripts.php';
