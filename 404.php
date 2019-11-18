@@ -12,7 +12,7 @@
 		<main id="main404" class="site-main">
 
 			<section class="error-404 not-found">
-			<h1>Erreur 404 <br>Oops! Cette page n'existe pas.</h1>
+			<h1>Erreur 404 <br><br> Cette page n'existe pas.</h1>
 
 
 				</div><!-- .page-content -->
