@@ -2,22 +2,13 @@
     #CATTeam
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 90vw;
         max-width: $maxTablet;
         margin: auto;
     }
 }
-@media screen and (max-width: $maxPhone) {
-    #CATTeam
-    {
-        flex-direction: column;
-       a
-       {
-        margin:10px auto;
-       }
-    }
-}
+
 
 
 #teamContent 

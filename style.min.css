@@ -69,7 +69,7 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #jobContent .entry-content p{align-self:center;grid-column:2/3;grid-row:2/3;width:90%}
 #jobContent .entry-content a{grid-column:3/4;grid-row:1/3;text-decoration:none;background-color:#5dc976;border-radius:0 3px 3px 0}
 #jobContent .entry-content a div{border-radius:0 3px 3px 0;background-color:#5dc976;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
-#contentPage #CATTeam{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;width:90vw;max-width:1000px;margin:auto}
+#contentPage #CATTeam{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:90vw;max-width:1000px;margin:auto}
 #teamContent{background-color:#efefef;width:100vw}
 #teamContent .gridTeam{margin:auto;width:90vw;max-width:1000px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
 #teamContent .gridTeam .partner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:200px;margin:10px}
@@ -177,7 +177,5 @@ header{height:70px}
 #jobContent .entry-content a{grid-column:1/2;grid-row:3/4;border-radius:0 0 3px 3px}
 #jobContent .entry-content a div{height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:0 0 3px 3px}
 #jobContent .entry-content a div i{margin:10px}
-#CATTeam{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-#CATTeam a{margin:10px auto}
 }@media screen and (max-width:calc($maxTablet+80px)){#arhiveContent ul{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 }
