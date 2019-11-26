@@ -73,7 +73,7 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #teamContent{background-color:#efefef;width:100vw}
 #teamContent .gridTeam{margin:auto;width:90vw;max-width:1000px;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}
 #teamContent .gridTeam .partner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:200px;margin:10px}
-#teamContent .gridTeam .partner img{width:150px;max-width:20vw;margin:20px auto;display:block}
+#teamContent .gridTeam .partner img{width:150px;margin:20px auto;display:block}
 #teamContent .gridTeam .partner .first_name{width:100%;text-align:center}
 #teamContent .gridTeam .partner .first_name .family_name{text-transform:uppercase}
 #teamContent .gridTeam .partner #job{font-size:14px;width:100%;text-align:center}
