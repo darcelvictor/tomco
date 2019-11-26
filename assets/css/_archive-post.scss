@@ -6,8 +6,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 90vw;
     max-width: $maxTablet;
-    width: 90vh;
     margin: 0 auto;
     }
     .post
@@ -15,7 +15,7 @@
         display: block;
         background-color:#FFF;
         width: 300px;
-        margin: 5px;
+        margin : 10px;
         padding: 5px;
         h3
         {
@@ -59,6 +59,17 @@
                 color:$TomcoGray;
                 font-size : 6px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: calc($maxTablet+80px)) 
+{
+    #arhiveContent
+    { 
+        ul
+        {
+        justify-content: center;
         }
     }
 }

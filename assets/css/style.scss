@@ -108,6 +108,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 #testimonial
 {
+    img
+    {
+        object-fit: cover;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#testimonial
+{
    .swiper-container
    {
        width: $maxTablet;
@@ -125,9 +135,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 > *{
                     grid-row: 1/2;
                     grid-column:1/2;
-                    max-height: 100px;
-                    max-width: 100%;
-                    margin: auto;
+                    object-fit: cover;
+                    width: 100%;
                 }
             }
             .author{
