@@ -1,16 +1,59 @@
 #arhiveContent
 { 
+    background-color: $myGray;
     ul
     {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: $maxTablet;
     width: 90vh;
     margin: 0 auto;
     }
-    li
+    .post
     {
+        display: block;
+        background-color:#FFF;
+        width: 300px;
+        margin: 5px;
+        padding: 5px;
+        h3
+        {
+            margin-bottom: 5px;
+            font-family: $muli;
+        }
+        .excerpt
+        {
+            padding: 10px 0;
+        }
+        .postBttn
+        {
+            text-decoration: none;
+            .singlePostTxt
+            {
+                margin: -5px;
+                border-radius: 0 0 $borderRadius $borderRadius;
+                width: 100%;
+                background-color: $darkBlue;
+                font-family: $muli;
+                padding: 5px;
+                text-decoration: none;
+                color: $myGray;
+                text-align: right;
+                .fa-chevron-right
+                {
+                    color: $myGray;
+                    font-size : 12px;
+                }
+            }
+        }
         .category
         {
+            a
+            {
+                text-decoration: none;
+                color: $TomcoGray;
+            }
             .fa-circle
             {
                 color:$TomcoGray;

@@ -14,11 +14,11 @@ Template Name: archive
                 $recentPosts->query('showposts=5');
             ?>
             <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
-                <li>
+                <li class="post shadow borderRadius">
                     <h3><?php the_title(); ?> </h3>
                     <p class="category"><?php the_category($separator =' <i class="fas fa-circle"></i> ')?></p>
-                    <p class="excerpt"><?php the_excerpt(); ?></p>
-                    <a href="<?php the_permalink() ?>" rel="bookmark">lien</a>
+                    <div class="excerpt"><?php the_excerpt(); ?></div>
+                    <a class="postBttn" href="<?php the_permalink() ?>" rel="bookmark"><div class="singlePostTxt">Découvrir <i class="fas fa-chevron-right"></i></div></a>
                 </li>
             <?php endwhile; ?>
         </ul>

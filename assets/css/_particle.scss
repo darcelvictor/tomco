@@ -4,6 +4,9 @@
     height: 60vh;
     width: 100vw;
     color: $myGray;
+    background-image:url(assets/img/particleJS.png);
+    background-color: $darkBlue;
+    background-size: cover;
     .headerContent
     {
         position: absolute;
