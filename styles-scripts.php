@@ -9,7 +9,7 @@ function tomco_scripts() {
 	wp_register_style('font_muli', 'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800&display=swap', array(), null, 'all');
 	wp_register_style('swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css', array(), null, 'all');
 	//wp_register_style('fontAwesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
-	wp_register_style('fontAwesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css', array(), null, 'all');
+	wp_register_style('fontAwesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
 	
     wp_enqueue_style('font_lora');
 	wp_enqueue_style('font_muli');
