@@ -24,7 +24,7 @@ function tomco_scripts() {
 	// //wp_enqueue_script( 'easyPieChart.js', 'https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/easypiechart.min.js', array(), '20151215', true );
 	// wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
 	// wp_enqueue_script( 'swiper.js', 'https://unpkg.com/swiper/js/swiper.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'jQuery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '20151215', true );
+	//wp_enqueue_script( 'jQuery', 'https://code.jquery.com/jquery-3.4.1.slim.min.js', array(), '20151215', true );
 	if( is_page( 36 ) ) {
 		if ( ! wp_is_mobile() ) {
 			wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
