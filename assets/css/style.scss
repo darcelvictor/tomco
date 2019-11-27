@@ -52,18 +52,34 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 #number
 {
-    .content {
+    .content 
+    {
         margin: auto;
-        width: $maxTablet;
-        max-width: $maxTablet;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .chart{
-            width: 10vw;
-            height: 10vw;
-            min-width: 200px;
-            min-height: 200px;
+        ul
+        {
+            width: $maxTablet;
+            max-width: 90vw;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-around;
+            li
+            {
+                width: 150px;
+                height: 150px;
+                margin: 20px;
+                border: solid 15px $green;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p
+                {
+                    text-align: center;
+                    font-weight: 800;
+                }
+            }
         }
     }
 }
@@ -75,7 +91,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     {
         margin: auto;
         width: $maxTablet;
-        max-width: 95vw;
+        max-width: 90vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -291,18 +307,23 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
         }
     }
-    #number
-    {
-        .content{
-            max-width: 95vw;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            .chart-container{
-                margin: 20px;
-            }
-        }
-    }
+    // #number
+    // {
+    //     .content{
+    //         max-width: 90vw;
+    //         display: flex;
+    //         flex-flow: row wrap;
+    //         justify-content: space-around;
+    //         ul
+    //         {                
+    //             li
+    //             {
+    //                 width: 200px;
+    //                 height: 200px;
+    //             }
+    //         }
+    //     }
+    // }
 
     #testimonial
     {

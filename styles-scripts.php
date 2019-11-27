@@ -30,7 +30,7 @@ function tomco_scripts() {
 			wp_enqueue_script( 'particles.js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '20151215', true );
 			wp_enqueue_script( 'three.js', 'https://threejs.org/examples/js/libs/stats.min.js', array(), '20151215', true );
 		}
-		wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
+		// wp_enqueue_script( 'Chart.js', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', array(), '20151215', true );
 		wp_enqueue_script( 'swiper.js', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js', array(), '20151215', true );
 		}
 

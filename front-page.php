@@ -24,18 +24,20 @@
         </div>
     </section>
     <section id="number">
-    <h2><?php the_field('title_in_a_few_figures');?></h2>
-    <div class="content">
-        <div class="chart-container" style="position: relative;">
-            <canvas id="myChart1" class="chart" data-values="<?php the_field('firstDunoughtValues');?>" data-text="<?php the_field('first_dunought_txt');?>"></canvas>
+        <h2><?php the_field('title_in_a_few_figures');?></h2>
+        <div class="content">
+            <ul>
+                <li>
+                    <p><?php the_field('first_dunought_txt');?></p>
+                </li>
+                <li>
+                    <p><?php the_field('second_dunought_txt');?></p>
+                </li>
+                <li>
+                    <p><?php the_field('third_dunought_txt');?></p>
+                </li>
+            </ul>
         </div>
-        <div class="chart-container" style="position: relative;">
-        <canvas id="myChart2" class="chart" data-values="<?php the_field('secondDunoughtValues');?>" data-text="<?php the_field('second_dunought_txt');?>"></canvas>
-        </div>
-        <div class="chart-container" style="position: relative;">
-        <canvas id="myChart3" class="chart" data-values="<?php the_field('thirdDunoughtValues');?>" data-text="<?php the_field('third_dunought_txt');?>"></canvas>
-        </div>
-    </div>
     </section>
 
      <!-- team -->
