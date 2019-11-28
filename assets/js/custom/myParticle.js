@@ -113,7 +113,7 @@ window.onload = function()
 }catch(e){
 	
   console.error(e);
-  console.clear();
+  // console.clear();
 }
 }
 

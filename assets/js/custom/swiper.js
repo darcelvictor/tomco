@@ -12,4 +12,4 @@ var mySwiper = new Swiper('.swiper-container', {
 	console.error(e);
 }
 
-console.clear();
+// console.clear();
