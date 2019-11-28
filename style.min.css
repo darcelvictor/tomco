@@ -37,7 +37,7 @@ h3{font-size:1.953em !important}
 h4{font-size:1.563em !important}
 h5{font-size:1.25em !important}
 small,.text_small{font-size:.8em !important}
-i{font-family:FontAwesome !important;color:#efefef;text-decoration:none}
+.FontAwesome{font-family:FontAwesome !important;color:#efefef;text-decoration:none}
 html{scroll-behavior:smooth}
 .Bttn{text-decoration:none !important;background-color:#5dc976 !important;color:#efefef !important;opacity:1 !important;color:#efefef !important;text-align:center !important;padding:10px 15px 15px 15px !important;border-radius:3px !important;border-color:#5dc976 !important;-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.3) !important;box-shadow:5px 5px 5px rgba(0,0,0,0.3) !important;font-size:2em !important;font-family:"muli",sans-serif;margin:30px auto 0 auto !important}
 .blBttn{background-color:#232741 !important;border-color:#232741 !important}

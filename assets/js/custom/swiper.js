@@ -8,8 +8,7 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 });
 }catch(e){
-	
-	console.error(e);
+  console.log(e);
 }
 
 // console.clear();

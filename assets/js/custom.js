@@ -150,7 +150,7 @@ window.onload = function () {
       "retina_detect": true
     });
   } catch (e) {
-    console.error(e); // console.clear();
+    console.log(e);
   }
 }; // var myElement = document.getElementById('mySecondCanvas');
 // var ctx1 = myElement.getContext('2d');
@@ -320,5 +320,5 @@ try {
     }
   });
 } catch (e) {
-  console.error(e);
+  console.log(e);
 } // console.clear();

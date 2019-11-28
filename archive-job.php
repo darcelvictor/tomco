@@ -17,7 +17,7 @@ Template Name: archive-job
                     <li class="entry-content shadow borderRadius">
                         <h2><?php the_title(); ?></h2>
                         <?php the_excerpt(); ?>
-                        <a href="<?php the_permalink() ?>"><div><i class="fas fa-chevron-right"></div></i></a>
+                        <a href="<?php the_permalink() ?>"><div><i class="FontAwesome fas fa-chevron-right"></div></i></a>
                     </li>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
