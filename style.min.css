@@ -57,6 +57,7 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #arhiveContent ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-wrap:wrap;flex-wrap:wrap;width:90vw;max-width:1000px;margin:0 auto}
 #arhiveContent .post{display:block;background-color:#FFF;width:300px;margin:10px;padding:15px}
 #arhiveContent .post h3{margin-bottom:5px;font-family:"muli",sans-serif}
+#arhiveContent .post .excerpt{padding:0 0 20px 0}
 #arhiveContent .post .excerpt p{padding:0 15px}
 #arhiveContent .post .postBttn{text-decoration:none}
 #arhiveContent .post .postBttn .singlePostTxt{margin:-15px;border-radius:0 0 3px 3px;width:310px;background-color:#232741;font-family:"muli",sans-serif;padding:10px;text-decoration:none;color:#efefef;text-align:right}
