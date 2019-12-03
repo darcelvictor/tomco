@@ -16,7 +16,7 @@ Template Name: archive
             <?php while ($recentPosts->have_posts()) : $recentPosts->the_post(); ?>
                 <li class="post shadow borderRadius">
                     <h3><?php the_title(); ?> </h3>
-                    <p class="category"><?php the_category($separator =' <i class="fas fa-circle"></i> ')?></p>
+                    <p class="category"><?php the_category($separator =' <i class="fas fa-circle FontAwesome"></i> ')?></p>
                     <div class="excerpt"><?php the_excerpt(); ?></div>
                     <a class="postBttn" href="<?php the_permalink() ?>" rel="bookmark"><div class="singlePostTxt">Découvrir <i class="FontAwesome fas fa-chevron-right"></i></div></a>
                 </li>

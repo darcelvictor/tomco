@@ -58,7 +58,7 @@ Template Name: archive-team
                             <p class="first_name"><?php the_field('first_name');?> <span class="family_name"><?php the_field('last_name');?></span></p>
                             <p id="job"><?php the_field('job');?></p>
                             <a class="Bttn lkBttn" href="<?php the_field('linkedin_link');?>">
-                            Profil Linkedin <i class="fab fa-linkedin-in"></i>
+                            Linkedin <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                         <?php endwhile; ?>
