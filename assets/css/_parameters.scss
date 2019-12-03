@@ -7,6 +7,16 @@ $twitterBlue :  #1DA1F2;
 $myDarkGray :#707070;
 $TomcoGray : #38373a;
 
+/*-----------------largeur max menu mobile-----------------*/
+
+$maxTablet : 1000px;
+$maxPhone : 720px;
+$maxWidthContent : 85vw;
+html {
+    scroll-behavior: smooth;
+  }
+
+
 /*----------------shadow-----------------*/
 $shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 $borderRadius : 3px;
@@ -58,11 +68,15 @@ body {
   }
   
   h1 {
-    margin-top: 0;
+    margin: 0 0  2.5rem;
     font-size: 3.052em !important;
   }
   
-  h2 {font-size: 2.441em!important;}
+h2 
+{
+    font-size: 2.441em!important;
+    margin: 0 0  2.5rem;
+}
   
   h3 {font-size: 1.953em!important;}
   
@@ -72,6 +86,15 @@ body {
   
   small, .text_small {font-size: 0.8em!important;}
 
+  @media screen and (max-width: $maxTablet) 
+{
+    h2,h1
+    {
+        margin: 0 0  1.5rem;
+    }
+
+}
+
   /*----------------FontAwesome-----------------*/
 .FontAwesome
 {
@@ -79,17 +102,6 @@ body {
     color : $myGray;
     text-decoration: none;
 }
-
-
-
-/*-----------------largeur max menu mobile-----------------*/
-
-$maxTablet : 1000px;
-$maxPhone : 720px;
-
-html {
-    scroll-behavior: smooth;
-  }
 
 
 /*-----------------button-----------------*/
@@ -106,7 +118,7 @@ html {
     border-radius: 3px!important;
     border-color: $green!important;
     box-shadow: $shadow!important;
-    font-size: 2em !important;
+    font-size: 1.25rem !important;
     font-family: $muli ;
     margin:30px auto 0 auto !important;
 }
