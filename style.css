@@ -114,7 +114,7 @@ footer .site-info { text-align: center; display: -webkit-box; display: -ms-flexb
 
 #arhiveContent .post .excerpt { padding: 0 0 20px 0; }
 
-#arhiveContent .post .excerpt p { padding: 0 15px; }
+#arhiveContent .post .excerpt p { padding: 15px 0; }
 
 #arhiveContent .post .postBttn { text-decoration: none; }
 
