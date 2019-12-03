@@ -16,7 +16,7 @@
         background-color:#FFF;
         width: 300px;
         margin : 10px;
-        padding: 5px;
+        padding: 15px;
         h3
         {
             margin-bottom: 5px;
@@ -24,19 +24,19 @@
         }
         .excerpt
         {
-            padding: 10px 0;
+            padding: 0 0 20px 0;
         }
         .postBttn
         {
             text-decoration: none;
             .singlePostTxt
             {
-                margin: -5px;
+                margin: -15px;
                 border-radius: 0 0 $borderRadius $borderRadius;
-                width: 100%;
+                width: 310px;
                 background-color: $darkBlue;
                 font-family: $muli;
-                padding: 5px;
+                padding: 10px;
                 text-decoration: none;
                 color: $myGray;
                 text-align: right;
@@ -53,6 +53,7 @@
             {
                 text-decoration: none;
                 color: $TomcoGray;
+                font-size: 0.8rem;
             }
             .fa-circle
             {

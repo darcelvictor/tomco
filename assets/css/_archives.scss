@@ -12,7 +12,7 @@
     p
     {
         width: $maxTablet;
-        max-width: 90vw;
+        max-width: $maxWidthContent;
         margin: auto;
         text-align: justify;
     }
