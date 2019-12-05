@@ -32,8 +32,9 @@ $borderRadius : 3px;
 
 
 /*-----------------Fonts-----------------*/
-$muli : 'muli', sans-serif;
-$lora :'Lora', serif;
+$muli :'muli', sans-serif;
+$lora :'muli', sans-serif;
+// $lora :'Lora', serif;
 
 a,p
 {
@@ -42,7 +43,7 @@ a,p
 
 h2,h1
 {
-   font-family: 'Lora', serif;
+   font-family: $lora;
    color: $TomcoGray;
    text-align: center;
 }
@@ -147,4 +148,10 @@ section:not(.noPadding)
 {
     padding-top: 40px !important;
     padding-bottom: 40px !important;
+}
+
+/*-----------------fix elementor-----------------*/
+strong
+{
+    font-weight: 800;
 }

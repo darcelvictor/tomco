@@ -46,6 +46,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            .CATmobile
+                {
+                    display: none;
+                }
             }
         }
     }
@@ -88,6 +92,13 @@
                 justify-content: flex-end;
                 align-items: center;
                 border-radius: 0 0 $borderRadius $borderRadius;
+                .CATmobile
+                {
+                    display: block;
+                    text-align: right;
+                    text-decoration: none;
+                    color: $myGray;
+                }
                 i
                 {
                     margin: 10px;
