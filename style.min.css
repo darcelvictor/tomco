@@ -182,4 +182,5 @@ header{height:70px}
 #jobContent .entry-content a div{height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:0 0 3px 3px}
 #jobContent .entry-content a div .CATmobile{display:block;text-align:right;text-decoration:none;color:#efefef}
 #jobContent .entry-content a div i{margin:10px}
+}@media only screen and (max-width:600px){.wpforms-container-full .wpforms-form .wpforms-field{overflow-x:hidden !important}
 }
