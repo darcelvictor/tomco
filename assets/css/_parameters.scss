@@ -150,21 +150,3 @@ section:not(.noPadding)
     padding-bottom: 40px !important;
 }
 
-/*-----------------fix css elementor and wpform-----------------*/
-strong, b
-{
-    font-weight: 800;
-}
-
-@media only screen and (max-width: 600px)
-{
-.wpforms-container-full .wpforms-form .wpforms-field 
-    {
-    overflow-x: hidden !important;
-    }
-}
-
-.layoutArea .column ul
-{
-list-style: inside;
-}

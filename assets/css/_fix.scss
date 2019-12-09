@@ -1,0 +1,18 @@
+/*-----------------fix css elementor and wpform-----------------*/
+strong, b
+{
+    font-weight: 800 !important;
+}
+
+@media only screen and (max-width: 600px)
+{
+.wpforms-container-full .wpforms-form .wpforms-field 
+    {
+    overflow-x: hidden !important;
+    }
+}
+
+.layoutArea .column ul
+{
+list-style: inside !important;
+}
