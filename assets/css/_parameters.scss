@@ -151,7 +151,7 @@ section:not(.noPadding)
 }
 
 /*-----------------fix css elementor and wpform-----------------*/
-strong
+strong, b
 {
     font-weight: 800;
 }
@@ -162,4 +162,9 @@ strong
     {
     overflow-x: hidden !important;
     }
+}
+
+.layoutArea .column ul
+{
+list-style: inside;
 }
