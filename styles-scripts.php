@@ -5,11 +5,11 @@
 function tomco_scripts() {
 	wp_enqueue_style( 'tomco-style', get_stylesheet_uri() );
 	
-	wp_register_style('font_lora', 'https://fonts.googleapis.com/css?family=Lora:400,700&display=swap', array(), null, 'all');
+	//wp_register_style('font_lora', 'https://fonts.googleapis.com/css?family=Lora:400,700&display=swap', array(), null, 'all');
 	wp_register_style('font_muli', 'https://fonts.googleapis.com/css?family=Muli:400,800&display=swap', array(), null, 'all');
 	wp_register_style('fontAwesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null, 'all');
 	
-    wp_enqueue_style('font_lora');
+    //wp_enqueue_style('font_lora');
 	wp_enqueue_style('font_muli');
 	wp_enqueue_style('fontAwesome');
 

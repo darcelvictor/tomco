@@ -170,12 +170,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 justify-self: left;
                 padding-top: 10px;
                 > * {
-                font-family: $lora;
+                font-family: $fontTwo;
                 color:$myDarkGray;
                 text-align: left;
                } 
                 .name{
-                    font-family: $lora;
+                    font-family: $fontTwo;
                     font-weight: 800;
                     color:$myDarkGray;
                     text-align: left;
@@ -197,7 +197,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
                 grid-row: 1/3;
                 grid-column:3/4;
                 font-size: 30px;
-                font-family: $muli;
+                font-family: $fontOne;
                 color: $myDarkGray;
             }
         }
@@ -239,7 +239,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         }
         label
         {
-            font-family: $muli;
+            font-family: $fontOne;
             color :$myDarkGray;
             font-weight: 400;
         }
@@ -277,7 +277,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
         p
         {
             margin: 10px auto 20px auto;
-            font-family: $muli;
+            font-family: $fontOne;
             text-align: center;
             font-weight: bold;
             text-decoration: none;
