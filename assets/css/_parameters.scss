@@ -38,10 +38,10 @@ $fontTwo :'muli', sans-serif;
 
 a,p
 {
-    font-family: 'muli', sans-serif;
+    font-family: $fontOne !important;
 }
 
-h2,h1
+h5,h4,h3,h2,h1
 {
    font-family: $fontTwo;
    color: $TomcoGray;
