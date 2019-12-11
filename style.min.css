@@ -104,7 +104,7 @@ header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-ind
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .menu-toggle{border:0;height:70px;width:70px;outline:0;background-color:#fff}
 strong,b{font-weight:bold !important}
-.elementor-widget-text-editor .elementor-text-editor ul{list-style:circle inside !important}
+.elementor-widget-text-editor .elementor-text-editor ul{display:block !important;list-style-type:disc !important;margin-top:1em !important;margin-bottom:1em !important;margin-left:0 !important;margin-right:0 !important;padding-left:40px !important}
 #companyPresentation{background-color:#efefef}
 #companyPresentation .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:80vw;margin:auto}
 #companyPresentation .content iframe,#companyPresentation .content p{width:560px !important}
