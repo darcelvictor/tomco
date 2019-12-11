@@ -28,8 +28,8 @@ table{border-collapse:collapse;border-spacing:0}
 html{scroll-behavior:smooth}
 .shadow{-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.3);box-shadow:5px 5px 5px rgba(0,0,0,0.3)}
 .borderRadius{border-radius:3px}
-a,p{font-family:'muli',sans-serif}
-h2,h1{font-family:"muli",sans-serif;color:#38373a;text-align:center}
+a,p,*{font-family:"muli",sans-serif !important}
+h5,h4,h3,h2,h1{font-family:"muli",sans-serif;color:#38373a;text-align:center}
 body{background-color:white;font-weight:400;line-height:1.45;color:#707070}
 h1,h2,h3,h4,h5{margin:0 0 1rem;font-weight:400;line-height:1.15}
 h1{margin:0 0 2.5rem;font-size:3.052em !important}
@@ -44,7 +44,6 @@ small,.text_small{font-size:.8em !important}
 .grBttn{background-color:#5dc976 !important;border-color:#5dc976 !important}
 a.anchor{display:block;position:relative;top:-143px;visibility:hidden}
 section:not(.noPadding){padding-top:40px !important;padding-bottom:40px !important}
-strong{font-weight:800}
 .swiper-container{width:100%;height:100%}
 .swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #particles-js{height:60vh;width:100vw;color:#efefef;background-image:url(assets/img/particleJS.png);background-color:#232741;background-size:cover}
@@ -104,6 +103,8 @@ header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-ind
 .main-navigation a{text-decoration:none}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .menu-toggle{border:0;height:70px;width:70px;outline:0;background-color:#fff}
+strong,b{font-weight:bold !important}
+.elementor-widget-text-editor .elementor-text-editor ul{list-style:circle inside !important;display:list-item !important}
 #companyPresentation{background-color:#efefef}
 #companyPresentation .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:80vw;margin:auto}
 #companyPresentation .content iframe,#companyPresentation .content p{width:560px !important}
