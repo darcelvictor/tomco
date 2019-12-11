@@ -28,7 +28,7 @@ table{border-collapse:collapse;border-spacing:0}
 html{scroll-behavior:smooth}
 .shadow{-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.3);box-shadow:5px 5px 5px rgba(0,0,0,0.3)}
 .borderRadius{border-radius:3px}
-a,p{font-family:"muli",sans-serif !important}
+a,p,li,ul{font-family:"muli",sans-serif !important}
 h5,h4,h3,h2,h1{font-family:"muli",sans-serif;color:#38373a;text-align:center}
 body{background-color:white;font-weight:400;line-height:1.45;color:#707070}
 h1,h2,h3,h4,h5{margin:0 0 1rem;font-weight:400;line-height:1.15}
@@ -105,6 +105,7 @@ header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-ind
 .menu-toggle{border:0;height:70px;width:70px;outline:0;background-color:#fff}
 strong,b{font-weight:bold !important}
 .elementor-widget-text-editor .elementor-text-editor ul,.wp-editor-area ul{display:block !important;list-style-type:disc !important;margin-top:1em !important;margin-bottom:1em !important;margin-left:0 !important;margin-right:0 !important;padding-left:40px !important}
+.elementor-widget-text-editor .elementor-text-editor ol,.wp-editor-area ol{display:block;list-style-type:decimal;margin-top:1em;margin-bottom:1em;margin-left:0;margin-right:0;padding-left:40px}
 #companyPresentation{background-color:#efefef}
 #companyPresentation .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:80vw;margin:auto}
 #companyPresentation .content iframe,#companyPresentation .content p{width:560px !important}

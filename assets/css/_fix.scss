@@ -22,3 +22,14 @@ strong, b
     margin-right: 0 !important;
     padding-left: 40px !important;
 }
+
+.elementor-widget-text-editor .elementor-text-editor ol, .wp-editor-area ol
+{
+    display: block;
+    list-style-type: decimal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
