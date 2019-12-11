@@ -12,7 +12,7 @@ strong, b
     }
 }
 
-.elementor-widget-text-editor .elementor-text-editor ul
+.elementor-widget-text-editor .elementor-text-editor ul, .wp-editor-area ul
 {
     display: block !important;
     list-style-type: disc !important;
@@ -22,5 +22,3 @@ strong, b
     margin-right: 0 !important;
     padding-left: 40px !important;
 }
-
-// , .wp-editor-area ul
