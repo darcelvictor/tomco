@@ -28,7 +28,7 @@ table{border-collapse:collapse;border-spacing:0}
 html{scroll-behavior:smooth}
 .shadow{-webkit-box-shadow:5px 5px 5px rgba(0,0,0,0.3);box-shadow:5px 5px 5px rgba(0,0,0,0.3)}
 .borderRadius{border-radius:3px}
-a,p,*{font-family:"muli",sans-serif !important}
+a,p,div{font-family:"muli",sans-serif !important}
 h5,h4,h3,h2,h1{font-family:"muli",sans-serif;color:#38373a;text-align:center}
 body{background-color:white;font-weight:400;line-height:1.45;color:#707070}
 h1,h2,h3,h4,h5{margin:0 0 1rem;font-weight:400;line-height:1.15}
