@@ -2,11 +2,27 @@
 {
     text-align: left;
     font-size: 2em !important;
-    margin: 2.5rem 0  2.5rem;
+    margin: 2.5rem 0  2rem;
 }
 
 .author
 {
     font-weight: 800;
     color: $darkBlue;
+}
+
+.wp-editor-area
+{
+        .question
+    {
+        text-align: left;
+        font-size: 2em !important;
+        margin: 2.5rem 0  2rem;
+    }
+
+    .author
+    {
+        font-weight: 800;
+        color: $darkBlue;
+    }
 }
