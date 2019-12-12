@@ -87,11 +87,13 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #singleJobContent #contactBttn a{-ms-flex-item-align:center;align-self:center;margin:40px auto}
 h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
 .question{color:#232741}
-.answer{padding:2em}
+.answer{padding-left:2em}
+ul.answer,ol.answer{padding-left:3em}
 .author{font-weight:800;color:#5dc976}
 .wp-editor-area h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
 .wp-editor-area .question{color:#232741}
-.wp-editor-area .answer{padding:2em}
+.wp-editor-area .answer{padding-left:2em}
+.wp-editor-area ul.answer,.wp-editor-area ol.answer{padding-left:3em}
 .wp-editor-area .author{font-weight:800;color:#5dc976}
 #contentPage h1{text-align:center}
 #contentPage p{width:1000px;max-width:85vw;margin:auto;text-align:justify}

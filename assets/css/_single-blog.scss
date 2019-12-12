@@ -12,7 +12,11 @@ h3.question
 
 .answer
 {
-    padding: 2em;
+    padding-left: 2em;
+}
+ul.answer, ol.answer
+{
+    padding-left: 3em;
 }
 .author
 {
@@ -36,7 +40,11 @@ h3.question
 
     .answer
     {
-        padding: 2em;
+        padding-left: 2em;
+    }
+    ul.answer, ol.answer
+    {
+        padding-left: 3em;
     }
     .author
     {
