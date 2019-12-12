@@ -85,14 +85,14 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #singleJobContent h2{text-align:left;margin:2rem 0 1rem}
 #singleJobContent #contactBttn{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 #singleJobContent #contactBttn a{-ms-flex-item-align:center;align-self:center;margin:40px auto}
-h2.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
-.question{color:#5dc976}
-.answer{padding:4em}
-.author{font-weight:800;color:#232741}
-.wp-editor-area h2.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
-.wp-editor-area .question{color:#5dc976}
-.wp-editor-area .answer{padding:4em}
-.wp-editor-area .author{font-weight:800;color:#232741}
+h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
+.question{color:#232741}
+.answer{padding:2em}
+.author{font-weight:800;color:#5dc976}
+.wp-editor-area h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
+.wp-editor-area .question{color:#232741}
+.wp-editor-area .answer{padding:2em}
+.wp-editor-area .author{font-weight:800;color:#5dc976}
 #contentPage h1{text-align:center}
 #contentPage p{width:1000px;max-width:85vw;margin:auto;text-align:justify}
 #contentPage #texte{width:1000px;display:block;margin:20px auto;text-align:justify}

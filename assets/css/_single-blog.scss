@@ -1,4 +1,4 @@
-h2.question
+h3.question
 {
     text-align: left;
     font-size: 2em !important;
@@ -7,22 +7,22 @@ h2.question
 
 .question
 {
-    color: $green;
+    color: $darkBlue;
 }
 
 .answer
 {
-    padding: 4em;
+    padding: 2em;
 }
 .author
 {
     font-weight: 800;
-    color: $darkBlue;
+    color: $green;
 }
 
 .wp-editor-area
 {
-    h2.question
+    h3.question
     {
         text-align: left;
         font-size: 2em !important;
@@ -31,16 +31,16 @@ h2.question
 
     .question
     {
-        color: $green;
+        color: $darkBlue;
     }
 
     .answer
     {
-        padding: 4em;
+        padding: 2em;
     }
     .author
     {
         font-weight: 800;
-        color: $darkBlue;
+        color: $green;
     }
 }
