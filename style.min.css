@@ -88,12 +88,12 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
 .question{color:#232741}
 .answer{padding-left:2em}
-ul.answer,ol.answer{padding-left:4em}
+ul.answer,ol.answer{padding-left:4em !important}
 .author{font-weight:800;color:#5dc976}
 .wp-editor-area h3.question{text-align:left;font-size:2em !important;margin:2.5rem 0 2rem}
 .wp-editor-area .question{color:#232741}
 .wp-editor-area .answer{padding-left:2em}
-.wp-editor-area ul.answer,.wp-editor-area ol.answer{padding-left:4em}
+.wp-editor-area ul.answer,.wp-editor-area ol.answer{padding-left:4em !important}
 .wp-editor-area .author{font-weight:800;color:#5dc976}
 #contentPage h1{text-align:center}
 #contentPage p{width:1000px;max-width:85vw;margin:auto;text-align:justify}
