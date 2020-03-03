@@ -62,8 +62,7 @@ footer .site-info{text-align:center;display:-webkit-box;display:-ms-flexbox;disp
 #arhiveContent .post .postBttn{text-decoration:none}
 #arhiveContent .post .postBttn .singlePostTxt{margin:-15px;border-radius:0 0 3px 3px;width:310px;background-color:#232741;font-family:"muli",sans-serif;padding:10px;text-decoration:none;color:#efefef;text-align:right}
 #arhiveContent .post .postBttn .singlePostTxt .fa-chevron-right{color:#efefef;font-size:12px}
-#arhiveContent .post .category p{pointer-events:none !important}
-#arhiveContent .post .category p a{text-decoration:none;color:#38373a;font-size:.8rem;pointer-events:none !important}
+#arhiveContent .post .category a{text-decoration:none;color:#38373a;font-size:.8rem;pointer-events:none !important}
 #arhiveContent .post .category .fa-circle{color:#38373a;font-size:6px}
 #jobContent{background-color:#efefef;padding:40px 0;min-height:50vh}
 #jobContent .entry-content{margin:10px auto !important;max-width:1000px;background-color:white;width:90vw;margin:auto;display:grid;grid-template-columns:5% 85% 10%;grid-template-rows:30% 70%}
