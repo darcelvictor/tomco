@@ -53,12 +53,16 @@
         }
         .category
         {
-            a
+            p
             {
-                text-decoration: none;
-                color: $TomcoGray;
-                font-size: 0.8rem;
                 pointer-events: none !important;
+                a
+                {
+                    text-decoration: none;
+                    color: $TomcoGray;
+                    font-size: 0.8rem;
+                    pointer-events: none !important;
+                }
             }
             .fa-circle
             {
