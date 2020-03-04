@@ -16,7 +16,7 @@ Template Name: archive-team
     <h2><?php the_field('advisors_title');?></h2>
        <ul class="gridTeam">
             <?php 
-            $args = array( 'post_type' => 'advisor', 'posts_per_page' => -1,'orderby' => 'date', 'order'   => 'DESC' );
+            $args = array( 'post_type' => 'advisor', 'posts_per_page' => -1,'orderby' => 'date', 'order'   => 'ASC' );
             $the_query = new WP_Query( $args ); 
             ?>
             <?php if ( $the_query->have_posts() ) : ?>
@@ -44,7 +44,7 @@ Template Name: archive-team
     <h2><?php the_field('expert_title');?></h2>
        <ul class="gridTeam">
             <?php 
-            $args = array( 'post_type' => 'expert', 'posts_per_page' => -1,'orderby' => 'date', 'order'   => 'DESC' );
+            $args = array( 'post_type' => 'expert', 'posts_per_page' => -1,'orderby' => 'date', 'order'   => 'ASC' );
             $the_query = new WP_Query( $args ); 
             ?>
             <?php if ( $the_query->have_posts() ) : ?>
