@@ -29,6 +29,16 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "header";
 @import "fix";
 
+/*-----------------Politique Confidentialité---------*/
+.tableConf 
+{
+    max-width: 900px;
+    width: 95vw;
+    border-collapse: collapse;
+    th, td {
+    border: 1px solid black;
+  }
+}
 
 /*-----------------home Page-----------------*/
 #companyPresentation
