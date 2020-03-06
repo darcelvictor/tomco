@@ -49,12 +49,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     list-style: inside;
 }
 
-.site-info a
-{
-    text-decoration: none;
-    color: $myDarkGray;
+.site-info{
+    *
+    {
+        margin :0 15px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: $myDarkGray;
+    }
 }
-
 /*-----------------home Page-----------------*/
 #companyPresentation
 {

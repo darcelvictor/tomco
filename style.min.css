@@ -119,6 +119,7 @@ strong,b{font-weight:bold !important}
 .tableConf{max-width:1000px;width:95vw;border-collapse:collapse;margin:auto}
 .tableConf th,.tableConf td{border:1px solid black}
 .listConf{width:1000px;max-width:85vw;margin:auto;text-align:justify;list-style:inside}
+.site-info *{margin:0 15px}
 .site-info a{text-decoration:none;color:#707070}
 #companyPresentation{background-color:#efefef}
 #companyPresentation .content{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;max-width:80vw;margin:auto}
