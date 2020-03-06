@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<p>Copyright &copy;<?php echo date("Y"); ?> ToMCo</p> | <a href="/politique-de-confidentialite/">Politique de confidentialité</a>
+			<p> Copyright &copy; <?php echo date("Y"); ?> ToMCo</p> | <a href="/politique-de-confidentialite/"> Politique de confidentialité </a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
