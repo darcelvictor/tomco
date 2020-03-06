@@ -168,9 +168,9 @@ strong,b{font-weight:bold !important}
 .menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (max-width:1000px){h2,h1{margin:0 0 1.5rem}
-#particles-js .headerContent{top:auto;left:auto;min-width:100%;min-height:60vh;display:grid;grid-template-columns:5% 90% 5%;grid-template-rows:25% 25% 25% 25%}
+#particles-js .headerContent{top:auto;left:auto;min-width:100%;min-height:60vh;display:grid;grid-template-columns:5% 90% 5%;grid-template-rows:20% 30% 30% 20%}
 #particles-js .headerContent h1{grid-column:2/3;grid-row:2/3;align-self:center;justify-self:center;max-width:85vw;font-size:40px;margin-left:auto;margin-right:auto;text-align:center !important}
-#particles-js .headerContent .grBttn{position:static;top:auto;grid-column:2/3;grid-row:3/4;align-self:center;justify-self:center;margin-top:0 !important;margin-left:auto !important;margin-right:auto !important}
+#particles-js .headerContent .grBttn{position:static;top:auto;grid-column:2/3;grid-row:3/4;align-self:flex-end;justify-self:center;margin-top:0 !important;margin-left:auto !important;margin-right:auto !important}
 #primary-menu{display:none;margin:0 !important}
 header{height:70px}
 .site-content{padding-top:70px}

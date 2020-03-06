@@ -49,7 +49,7 @@
         min-height: 60vh;
         display: grid;
         grid-template-columns: 5% 90% 5%;
-        grid-template-rows:  25% 25% 25% 25%;
+        grid-template-rows:  20% 30% 30% 20%;
         h1
         {
             grid-column: 2/3;
@@ -69,7 +69,7 @@
             top:auto;
             grid-column: 2/3;
             grid-row: 3/4;
-            align-self: center;
+            align-self: flex-end;
             justify-self: center;
             margin-top: 0!important;
             margin-left: auto!important;
