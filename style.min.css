@@ -98,6 +98,7 @@ ul.answer,ol.answer{padding-left:4em !important}
 #contentPage h1{text-align:center}
 #contentPage p{width:1000px;max-width:85vw;margin:auto;text-align:justify}
 #contentPage #texte{width:1000px;display:block;margin:20px auto;text-align:justify}
+.trp-language-switcher>div{border:0}
 header{position:fixed;width:100vw;top:0;height:146px;background-color:#fff;z-index:200}
 .site-content{padding-top:146px}
 #primary-menu li a,#primary-menu li a :visited{font-family:'muli',sans-serif;color:#707070;font-size:22px}
